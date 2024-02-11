@@ -7,4 +7,23 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'website-official-project';
+
+
+  private roles: string[] = [];
+  isLoggedIn = false;
+  showAdminBoard = false;
+  showModeratorBoard = false;
+  username?: string;
+
+  constructor() { }
+
+  ngOnInit(): void {
+
+
+  }
+
+  logout(): void {
+
+    window.location.reload();
+  }
 }
